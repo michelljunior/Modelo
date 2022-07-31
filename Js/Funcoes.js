@@ -41,3 +41,54 @@ function FecharAlerta(){
     document.querySelector('body').style.overflow = 'auto';
     document.querySelector('.Fundo').style.display = 'none';
 }
+
+
+// ---------------------- Apagar a partir daqui para versão web -------------------------------
+
+const { ipcRenderer } = require('electron');
+
+function init() {
+    window.isElectron = true;
+    window.ipcRenderer = ipcRenderer;
+}
+
+init();
+
+
+// Funções da janela do electron
+
+function Minimizar(){
+    window.ipcRenderer.send('Minimizar');
+}
+
+function Maximizar(){
+    window.ipcRenderer.send('Maximizar');
+}
+
+function FecharJanela(){
+    window.close()
+}
+
+// Logs do sistema
+
+function Log(Log){
+    DataLog = new Date();
+    Dia = DataLog.getDate();
+    Mes = DataLog.getMonth() + 1;
+
+    if (Mes < 10){
+        Mes = '0'+Mes;
+    }
+
+    Ano = DataLog.getFullYear();
+    Hora = DataLog.getHours();
+    Minuto = DataLog.getMinutes();
+    Segundo = DataLog.getSeconds();
+
+    if (Segundo < 10){
+        Segundo = '0'+Segundo;
+    }
+
+    window.ipcRenderer.send('Log', '['+Dia+'/'+Mes+'/'+Ano+' - '+Hora+':'+Minuto+':'+Segundo+']: ' + Log);
+}
+
