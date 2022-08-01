@@ -11,7 +11,7 @@
 
 input, select{
     border-radius: 2px;
-    padding: 5px 20px;
+    padding: 8px 20px;
     border: 1px solid var(--cor1);
 }
 
@@ -20,7 +20,7 @@ button{
     color: var(--cor5);
     transition-duration: 0.5s;
     border-radius: 2px;
-    padding: 5px 20px;
+    padding: 8px 20px;
     cursor: pointer;
     border: none;
 }
@@ -34,6 +34,31 @@ button:hover{
     background-color: var(--cor1);
     color: var(--cor5);
 }
+
+.Formulario span{
+    text-align: left;
+}
+
+.Formulario span p{
+    font-family: 'TextoBold';
+    padding: 5px 0px;
+}
+
+.Formulario .Conjunto{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Formulario .Conjunto p{
+    margin-left: 5px;
+}
+
+.Formulario button{
+    background-color: var(--cor1);
+    width: 100%;
+}
+
 
 /* Tabela */
 

@@ -13,7 +13,17 @@
     font-family: 'Texto';
 }
 
+*:focus{
+    outline: none; 
+}
+
+html, body, .Corpo{
+    width: 100%;
+    height: 100%;
+}
+
 .Fundo{
+    z-index: 20;
     display: none;
     width: 100%;
     height: 100%;
@@ -22,4 +32,36 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.452);
+}
+
+.Alinhado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Conteudo{
+    padding: 20px;
+}
+
+.Conjunto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Rodape{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cor2);
+    color: var(--cor5);
+}
+
+.Rodape p{
+    padding: 2px 5px;
 }
