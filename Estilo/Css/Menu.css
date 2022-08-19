@@ -1,0 +1,109 @@
+.Menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15% !important;
+    height: 100% !important;
+    position: fixed;
+    background-color: var(--cor1);
+}
+
+.Menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.Menu ul li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Logo{
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+
+.Menu ul li a{
+    display: flex;
+    text-decoration: none;
+    color: var(--cor5);
+    font-family: "Texto";
+    padding: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Menu ul li a:hover{
+    /* background-color: #55555570; */
+    border-left: 2px solid var(--cor2);
+}
+
+.Menu ul li ul li a{
+    background-color: #55555570;
+    padding-left: 30px;
+}
+
+.Menu ul li ul li a:hover{
+    background-color: var(--cor1);
+}
+
+.Menu ul li ul{
+    display: none;
+}
+
+.Menu ul li:hover > ul{
+    transition-duration: 0.5s;
+    display: block;
+}
+
+
+.headMenu{
+    width: auto;
+    padding: 10px;
+}
+
+.headMenu input{
+    padding: 10px;
+    border-radius: 4px;
+    border: 0;
+}
+
+.headMenu .Pasta{
+    padding: 10px;
+    width: 90%;
+    border-radius: 4px;
+    border: 0;
+}
+
+.SubMenu{
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: var(--cor4);
+    width: 85%;
+    position: fixed;
+    z-index: 2;
+}
+
+.SubMenu *{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.SubMenu img:hover{
+    background-color: rgb(215, 231, 250);
+}
+
+.Tela{
+    position: fixed;
+    border: none;
+    top: 40px;
+    right: 0px;
+    height: 91%;
+    width: 85%;
+}

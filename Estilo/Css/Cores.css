@@ -1,7 +1,7 @@
 :root{
-    --cor1: #0A0908;
-    --cor2: #314cb6;
+    --cor1: rgb(31, 31, 31);
+    --cor2: #3059fc;
     --cor3: #9fabed;
-    --cor4: #bcbdc7;
+    --cor4: #eeeded;
     --cor5: #fff;
 }

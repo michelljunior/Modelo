@@ -4,8 +4,6 @@
 @import url(./Cores.css);
 @import url(./Wigets.css);
 
-/* Comentar ou excluir caso seja um projeto web */
-@import url(./Janela.css);
 
 *{
     padding: 0;

@@ -16,7 +16,7 @@ input, select{
 }
 
 button{
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     color: var(--cor5);
     transition-duration: 0.5s;
     border-radius: 2px;
@@ -35,16 +35,21 @@ button:hover{
     color: var(--cor5);
 }
 
-.Formulario span{
+.Formulario label{
+    font-family: 'Texto';
+    font-weight: 900;
+    padding: 5px 0px;
     text-align: left;
+    font-size: 13px;
 }
 
-.Formulario span p{
-    font-family: 'TextoBold';
-    padding: 5px 0px;
+.Formulario div{
+    display: flex;
+    flex-direction: column;
 }
 
 .Formulario .Conjunto{
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -55,10 +60,19 @@ button:hover{
 }
 
 .Formulario button{
-    background-color: var(--cor1);
+    /* background-color: var(--cor1); */
     width: 100%;
 }
 
+.Link{
+    color: var(--cor1);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.Link:hover{
+    color: var(--cor2);
+}
 
 /* Tabela */
 
@@ -68,7 +82,9 @@ table {
 }
 
 thead td{
-    font-family: 'TextoBold';
+    font-family: 'Texto';
+    font-weight: 900;
+    font-size: 13px;
 }
 
 table, th, td {
@@ -76,7 +92,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 10px;
+    padding: 15px;
     text-align: left;
 }
 
@@ -109,4 +125,8 @@ tr:hover {
 
 .Alerta .Botoes button{
     margin: 0px 5px;
+}
+
+red{
+    color: red;
 }
